@@ -1,0 +1,117 @@
+{
+  "project": {
+    "name": "MVT Law - Usucapião",
+    "displayName": "MVT Law Advocacia",
+    "conversionAction": "WhatsApp",
+    "slug": "mvt-law-usucapiao",
+    "sourceTemplate": "Template 2",
+    "sourceVersion": "1.2.0"
+  },
+  "professional": {
+    "name": "",
+    "officeName": "MVT Law Advocacia",
+    "societyName": "Macedo Vieira e Tucunduva",
+    "oab": "",
+    "responsibleOab": "",
+    "area": "Direito Imobiliário e Registral",
+    "city": "São Paulo/SP",
+    "biography": "A MVT Law atua em Direito Imobiliário, incluindo regularização de imóveis, usucapião judicial e extrajudicial e Direito Registral. O atendimento é individualizado, com análise técnica da documentação antes de qualquer orientação."
+  },
+  "contact": {
+    "whatsapp": "5511999047660",
+    "whatsappMessage": "Olá, gostaria de entender quais informações são relevantes para analisar a situação do meu imóvel.",
+    "email": "contato@mvtlaw.com.br",
+    "website": "https://mvtlaw.com.br",
+    "instagram": "@mvtlaw"
+  },
+  "location": {
+    "city": "São Paulo/SP",
+    "regions": "Atendimento presencial em São Paulo e online",
+    "address": "Rua Bagé, 204 - Vila Mariana, São Paulo/SP",
+    "hours": "Atendimento presencial com agendamento e online",
+    "mapsQuery": "Rua Bagé, 204, Vila Mariana, São Paulo, SP"
+  },
+  "theme": {
+    "primary": "#019191",
+    "primaryDark": "#00222D",
+    "accent": "#EDBE4B",
+    "surface": "#F7F5F0",
+    "ink": "#202322",
+    "style": "Editorial"
+  },
+  "hero": {
+    "eyebrow": "USUCAPIÃO JUDICIAL E EXTRAJUDICIAL",
+    "title": "Seu imóvel pode ser regularizado por usucapião?",
+    "description": "A posse prolongada pode levar ao reconhecimento da propriedade. Entenda os caminhos e o que precisa ser analisado no seu caso.",
+    "cta": "Falar com o escritório",
+    "secondaryCta": "Entender como funciona",
+    "support": "Escritório em São Paulo - atendimento presencial e online"
+  },
+  "situations": [
+    { "title": "Imóvel sem escritura", "description": "Ocupado há anos, sem registro em cartório." },
+    { "title": "Contrato de gaveta", "description": "Compra feita por contrato particular ou recibo, sem transferência formal." },
+    { "title": "Imóvel de familiar falecido", "description": "Inventário não realizado e situação registral indefinida." },
+    { "title": "Terreno sem registro", "description": "Área utilizada há tempo, sem matrícula própria." },
+    { "title": "Posse antiga sem oposição", "description": "Uso contínuo e público, sem contestação de terceiros." }
+  ],
+  "paths": [
+    {
+      "number": "01",
+      "title": "Usucapião judicial",
+      "description": "Processada perante a Justiça, com citação das partes e dos confrontantes. Costuma ser o caminho quando há divergência sobre a posse, oposição de terceiros ou lacunas na documentação."
+    },
+    {
+      "number": "02",
+      "title": "Usucapião extrajudicial",
+      "description": "Processada no Cartório de Registro de Imóveis, sem ação judicial. Exige ata notarial, documentação técnica e manifestação dos interessados. O requerimento deve ser assinado por advogado."
+    }
+  ],
+  "modalities": [
+    { "title": "Ordinária", "description": "Posse com justo título e boa-fé, pelo prazo previsto em lei." },
+    { "title": "Extraordinária", "description": "Posse por prazo mais longo, sem exigência de justo título e boa-fé." },
+    { "title": "Especial urbana", "description": "Imóvel urbano dentro do limite de área legal, usado como moradia." },
+    { "title": "Especial rural", "description": "Imóvel rural dentro do limite legal, com moradia e uso produtivo." },
+    { "title": "Especial familiar", "description": "Posse direta e exclusiva de imóvel urbano após abandono do lar pelo cônjuge ou companheiro." },
+    { "title": "Coletiva", "description": "Núcleos urbanos informais em que as áreas não podem ser identificadas individualmente." }
+  ],
+  "analysis": {
+    "factors": ["Tempo de posse", "Como a posse teve início", "Características e uso do imóvel", "Existência de oposição de terceiros", "Situação registral e confrontações"],
+    "documents": ["Documento de identificação e CPF", "Contratos, recibos ou comprovantes de pagamento", "Contas em seu nome no endereço", "IPTU ou ITR", "Matrícula do imóvel, se houver"]
+  },
+  "outcomes": [
+    { "title": "Situação registral definida", "description": "A propriedade passa a constar formalmente no registro, com clareza sobre titularidade e limites." },
+    { "title": "Segurança jurídica", "description": "A titularidade reconhecida reduz a margem para disputas futuras." },
+    { "title": "Operações imobiliárias", "description": "Determinadas operações envolvendo o imóvel dependem de situação registral regular." },
+    { "title": "Financiamento e garantia", "description": "Crédito com garantia em imóvel exige matrícula regular. A concessão é decisão da instituição financeira." },
+    { "title": "Transmissão do patrimônio", "description": "Imóveis regularizados tendem a apresentar menor complexidade em inventário e partilha." }
+  ],
+  "process": [
+    { "number": "01", "title": "Primeiro contato", "description": "Entendimento da situação do imóvel e do histórico da posse." },
+    { "number": "02", "title": "Documentação", "description": "Verificação do que existe e do que precisa ser reunido." },
+    { "number": "03", "title": "Análise técnica", "description": "Avaliação sobre quais caminhos podem se aplicar ao caso." },
+    { "number": "04", "title": "Orientação", "description": "Apresentação do entendimento técnico e das providências cabíveis." }
+  ],
+  "faqs": [
+    { "question": "Quem pode pedir usucapião?", "answer": "Os requisitos variam conforme a modalidade e envolvem tempo de posse, características do imóvel e outras condições previstas em lei. A verificação depende da análise de cada situação." },
+    { "question": "Qual a diferença entre judicial e extrajudicial?", "answer": "A judicial é processada perante a Justiça. A extrajudicial é feita no Cartório de Registro de Imóveis, quando atendidos os requisitos legais. A definição depende das circunstâncias do caso." },
+    { "question": "Quanto tempo de posse é necessário?", "answer": "O prazo varia conforme a modalidade e as circunstâncias previstas em lei." },
+    { "question": "Preciso de advogado para a usucapião extrajudicial?", "answer": "Sim. A legislação exige que o requerimento seja assinado por advogado." },
+    { "question": "Posso fazer usucapião de qualquer imóvel?", "answer": "Não. A lei estabelece restrições, entre elas as relativas a bens públicos, além de requisitos próprios de cada modalidade." },
+    { "question": "Depois da usucapião, é possível financiar o imóvel?", "answer": "A regularização registral é requisito para que o imóvel possa ser oferecido como garantia em operações de crédito. A concessão depende da análise da instituição financeira." },
+    { "question": "O que acontece quando existe oposição à posse?", "answer": "A contestação por terceiros altera o tratamento da situação e pode influenciar a modalidade e a forma de processamento aplicável." },
+    { "question": "Quanto tempo pode levar?", "answer": "Varia conforme a forma de processamento, a documentação e fatores que não dependem apenas das partes envolvidas." },
+    { "question": "Quais custos podem existir?", "answer": "Além dos honorários, podem incidir custos de atos notariais e registrais, documentação técnica e, na via judicial, custas processuais." },
+    { "question": "E se eu não tiver todos os documentos?", "answer": "Não é necessário reunir tudo antes do primeiro contato. A partir das informações iniciais é possível orientar o que é relevante." }
+  ],
+  "seo": {
+    "title": "Usucapião de Imóveis | Advocacia Imobiliária | MVT Law",
+    "description": "Entenda a usucapião judicial e extrajudicial, suas modalidades e as informações relevantes para a análise do seu imóvel em São Paulo.",
+    "canonical": "https://mvtlaw.com.br/"
+  },
+  "approval": { "responsible": "Responsável a confirmar", "approved": false },
+  "pending": [
+    "Confirmar razão social completa e número de registro da sociedade na OAB/SP",
+    "Confirmar nome e número de OAB/SP do profissional responsável",
+    "Aprovar os textos finais e a política de privacidade antes da publicação"
+  ]
+}

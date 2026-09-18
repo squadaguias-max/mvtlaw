@@ -1,0 +1,11 @@
+{
+  "name": "Template 2",
+  "version": "1.2.0",
+  "direction": "Editorial, premium e orientado à conversão",
+  "recommendedFor": "Advogados e escritórios focados em contato por WhatsApp",
+  "defaultTheme": {
+    "primary": "#a98a52",
+    "secondary": "#191a1a"
+  },
+  "features": ["hero", "services", "team", "faq", "whatsapp", "location"]
+}
