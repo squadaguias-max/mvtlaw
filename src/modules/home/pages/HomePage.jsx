@@ -150,9 +150,6 @@ export function HomePage() {
             preload="metadata"
             disablePictureInPicture
             aria-label="Vídeo de uma advogada da MVT Law apresentando informações sobre documentação imobiliária"
-            onCanPlay={(event) => {
-              if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) event.currentTarget.pause();
-            }}
           />
           <div className="hero-media-note"><span>Direito Imobiliário</span><strong>Análise técnica de cada caso</strong></div>
         </div>
