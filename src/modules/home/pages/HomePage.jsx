@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowRight,
@@ -14,6 +15,8 @@ import {
   Phone,
   Scale,
   ShieldCheck,
+  Volume2,
+  VolumeX,
 } from "lucide-react";
 import { templateConfig as site, whatsappUrl } from "../../../config/template.config";
 import heroImage from "../../../assets/usucapiao-hero.webp";
@@ -90,6 +93,18 @@ function ContactForm() {
 }
 
 export function HomePage() {
+  const heroVideoRef = useRef(null);
+  const [isHeroVideoMuted, setIsHeroVideoMuted] = useState(true);
+
+  function toggleHeroVideoSound() {
+    const video = heroVideoRef.current;
+    if (!video) return;
+    const nextMuted = !video.muted;
+    video.muted = nextMuted;
+    setIsHeroVideoMuted(nextMuted);
+    if (!nextMuted && video.paused) video.play().catch(() => {});
+  }
+
   const legalServiceSchema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
@@ -139,6 +154,7 @@ export function HomePage() {
         </div>
         <div className="hero-media">
           <video
+            ref={heroVideoRef}
             src={heroVideo}
             poster={heroImage}
             width="720"
@@ -146,11 +162,23 @@ export function HomePage() {
             autoPlay
             muted
             loop
+            controls
             playsInline
             preload="metadata"
             disablePictureInPicture
+            onVolumeChange={(event) => setIsHeroVideoMuted(event.currentTarget.muted)}
             aria-label="Vídeo de uma advogada da MVT Law apresentando informações sobre documentação imobiliária"
           />
+          <button
+            className="hero-sound-toggle"
+            type="button"
+            onClick={toggleHeroVideoSound}
+            aria-pressed={!isHeroVideoMuted}
+            aria-label={isHeroVideoMuted ? "Ativar som do vídeo" : "Silenciar vídeo"}
+          >
+            {isHeroVideoMuted ? <Volume2 aria-hidden="true" /> : <VolumeX aria-hidden="true" />}
+            <span>{isHeroVideoMuted ? "Ativar som" : "Silenciar"}</span>
+          </button>
           <div className="hero-media-note"><span>Direito Imobiliário</span><strong>Análise técnica de cada caso</strong></div>
         </div>
       </section>
