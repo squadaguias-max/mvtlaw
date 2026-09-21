@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { templateConfig as site, whatsappUrl } from "../../../config/template.config";
 import heroImage from "../../../assets/usucapiao-hero.webp";
+import heroVideo from "../../../assets/documentos-hero.mp4";
 import meetingImage from "../../../assets/reuniao-mvt.webp";
 import teamImage from "../../../assets/equipe-mvt.webp";
 
@@ -137,11 +138,21 @@ export function HomePage() {
           <div className="hero-support"><MapPin aria-hidden="true" /> {site.hero.support}</div>
         </div>
         <div className="hero-media">
-          <img
-            src={heroImage}
-            width="1536"
-            height="1024"
-            alt="Documentos e planta de um imóvel ao lado de uma chave, com residência urbana ao fundo"
+          <video
+            src={heroVideo}
+            poster={heroImage}
+            width="720"
+            height="1280"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            disablePictureInPicture
+            aria-label="Vídeo de uma advogada da MVT Law apresentando informações sobre documentação imobiliária"
+            onCanPlay={(event) => {
+              if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) event.currentTarget.pause();
+            }}
           />
           <div className="hero-media-note"><span>Direito Imobiliário</span><strong>Análise técnica de cada caso</strong></div>
         </div>

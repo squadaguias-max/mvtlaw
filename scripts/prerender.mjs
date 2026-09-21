@@ -9,7 +9,7 @@ try {
   const template = await readFile(path, "utf8");
   const assetDirectory = new URL("../dist/assets/", import.meta.url);
   const builtAssets = await readdir(assetDirectory);
-  const sourceAssets = ["usucapiao-hero.webp", "reuniao-mvt.webp", "equipe-mvt.webp"];
+  const sourceAssets = ["usucapiao-hero.webp", "documentos-hero.mp4", "reuniao-mvt.webp", "equipe-mvt.webp"];
   let rendered = render();
 
   for (const sourceAsset of sourceAssets) {
