@@ -1,8 +1,12 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 import { templateConfig as site } from "../../config/template.config";
 import { Wordmark } from "./Header";
 
 export function Footer() {
+  const mapsQuery = encodeURIComponent(site.location.mapsQuery || site.location.address);
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+  const mapsEmbedUrl = `https://www.google.com/maps?q=${mapsQuery}&output=embed`;
+
   return (
     <footer>
       <div className="container footer-main">
@@ -16,6 +20,27 @@ export function Footer() {
           <a href="#inicio">Início</a><a href="#caminhos">Caminhos</a><a href="#modalidades">Modalidades</a><a href="#duvidas">Dúvidas</a>
         </nav>
       </div>
+      <section className="container footer-map" aria-labelledby="footer-map-title">
+        <div className="footer-map-heading">
+          <div>
+            <span>ONDE ESTAMOS</span>
+            <h2 id="footer-map-title">MVT Law em São Paulo</h2>
+            <p>{site.location.address}</p>
+          </div>
+          <a href={mapsUrl} target="_blank" rel="noopener noreferrer">
+            <MapPin aria-hidden="true" />Abrir no Google Maps<ExternalLink aria-hidden="true" />
+          </a>
+        </div>
+        <div className="footer-map-frame">
+          <iframe
+            src={mapsEmbedUrl}
+            title={`Localização da MVT Law — ${site.location.address}`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
+      </section>
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} MVT Law Advocacia.</span>
         <p>Este material tem caráter meramente informativo e não constitui publicidade profissional nos termos do Provimento nº 205/2021 do CFOAB. As informações aqui veiculadas não garantem resultados específicos.</p>
