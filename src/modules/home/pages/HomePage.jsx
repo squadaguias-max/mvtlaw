@@ -179,7 +179,6 @@ export function HomePage() {
             {isHeroVideoMuted ? <Volume2 aria-hidden="true" /> : <VolumeX aria-hidden="true" />}
             <span>{isHeroVideoMuted ? "Ativar som" : "Silenciar"}</span>
           </button>
-          <div className="hero-media-note"><span>Direito Imobiliário</span><strong>Análise técnica de cada caso</strong></div>
         </div>
       </section>
 

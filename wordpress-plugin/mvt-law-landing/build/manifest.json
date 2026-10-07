@@ -1,0 +1,43 @@
+{
+  "src/assets/documentos-hero.mp4": {
+    "file": "assets/documentos-hero-CkpyHYl0.mp4",
+    "src": "src/assets/documentos-hero.mp4"
+  },
+  "src/assets/equipe-mvt.webp": {
+    "file": "assets/equipe-mvt-C7Y730yG.webp",
+    "src": "src/assets/equipe-mvt.webp"
+  },
+  "src/assets/logo-mvt-law-branco.png": {
+    "file": "assets/logo-mvt-law-branco-DUc1TPCx.png",
+    "src": "src/assets/logo-mvt-law-branco.png"
+  },
+  "src/assets/logo-mvt-law-preto.png": {
+    "file": "assets/logo-mvt-law-preto-BO-7Nw-r.png",
+    "src": "src/assets/logo-mvt-law-preto.png"
+  },
+  "src/assets/reuniao-mvt.webp": {
+    "file": "assets/reuniao-mvt-MltkFi7X.webp",
+    "src": "src/assets/reuniao-mvt.webp"
+  },
+  "src/assets/usucapiao-hero.webp": {
+    "file": "assets/usucapiao-hero-BkQAaojz.webp",
+    "src": "src/assets/usucapiao-hero.webp"
+  },
+  "src/main.jsx": {
+    "file": "assets/main-C76MxC0W.js",
+    "name": "main",
+    "src": "src/main.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/main-BqC5kG0V.css"
+    ],
+    "assets": [
+      "assets/logo-mvt-law-preto-BO-7Nw-r.png",
+      "assets/logo-mvt-law-branco-DUc1TPCx.png",
+      "assets/usucapiao-hero-BkQAaojz.webp",
+      "assets/documentos-hero-CkpyHYl0.mp4",
+      "assets/reuniao-mvt-MltkFi7X.webp",
+      "assets/equipe-mvt-C7Y730yG.webp"
+    ]
+  }
+}

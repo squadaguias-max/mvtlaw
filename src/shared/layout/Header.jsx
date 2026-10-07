@@ -1,12 +1,16 @@
 import { Menu, MessageCircle, X } from "lucide-react";
 import { useState } from "react";
 import { whatsappUrl } from "../../config/template.config";
+import logoBlack from "../../assets/logo-mvt-law-preto.png";
+import logoWhite from "../../assets/logo-mvt-law-branco.png";
 
 export function Wordmark({ inverse = false }) {
   return (
-    <span className={`wordmark${inverse ? " inverse" : ""}`} aria-label="MVT Law Advocacia">
-      <strong>MVT LAW</strong><small>ADVOCACIA</small>
-    </span>
+    <img
+      className="brand-logo"
+      src={inverse ? logoWhite : logoBlack}
+      alt="MVT Law Advocacia"
+    />
   );
 }
 
